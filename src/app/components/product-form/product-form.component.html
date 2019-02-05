@@ -1,0 +1,33 @@
+<form (ngSubmit)="addProduct()">
+  <div class="form-group">
+    <input
+      type="text"
+      [(ngModel)]="product.name"
+      name="name"
+      placeholder="product name"
+      class="form-control"
+    />
+  </div>
+  <div class="form-group">
+    <input
+      type="text"
+      [(ngModel)]="product.description"
+      name="description"
+      placeholder="product description"
+      class="form-control"
+    />
+  </div>
+  <div class="form-group">
+    <input
+      type="number"
+      [(ngModel)]="product.price"
+      name="price"
+      placeholder="product Price"
+      class="form-control"
+    />
+  </div>
+
+  <button type="submit" class="btn btn-dark btn-block">
+    Save
+  </button>
+</form>
